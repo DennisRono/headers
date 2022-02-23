@@ -23,11 +23,11 @@ a{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding-top: 20px;
+            padding-top: 15px;
             .hlogo{
                 width: 40px;
                 height: 40px;
-                margin-top: -12px;
+                margin-top: -8px;
                 img{
                     width: 100%;
                     height: 100%;
@@ -42,6 +42,8 @@ a{
                             padding-top: 10px;
                             padding-bottom: 10px;
                             cursor: pointer;
+                            font-size: 1.2rem;
+                            font-weight: 400;
                         }
                     }
                 }
