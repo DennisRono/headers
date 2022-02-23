@@ -1,0 +1,16 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body {
+  border-style: border-box;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.header {
+  height: 60px;
+  background-color: #284fff;
+}
+/*# sourceMappingURL=header.css.map */

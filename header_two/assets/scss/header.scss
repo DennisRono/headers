@@ -4,4 +4,10 @@
 }
 html, body{
     border-style: border-box;
+    width: 100%;
+    overflow-x: hidden;
+}
+.header{
+    height: 60px;
+    background-color: rgb(40, 79, 255);
 }
