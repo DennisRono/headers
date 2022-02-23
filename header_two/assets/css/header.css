@@ -176,7 +176,7 @@ a {
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedone .feedtxt a {
-  color: #fff !important;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
   text-overflow: ellipsis;
   white-space: normal;
@@ -199,12 +199,18 @@ a {
   color: #fff;
 }
 
-.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt .jfeedtitle {
+.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt .jfeedtitle a {
   font-size: 30px;
   line-height: 1.2;
   cursor: pointer;
   font-weight: 700;
   letter-spacing: 1.5px;
+  color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt .jfeedtitle a:hover {
   color: #17b978;
 }
 

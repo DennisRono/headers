@@ -141,7 +141,7 @@ a{
                     left: 0;
                     padding: 20px;
                     a{
-                        color: #fff !important;
+                        color: #fff;
                         font-family: 'Roboto', sans-serif;
                         text-overflow: ellipsis;
                         white-space: normal;
@@ -161,12 +161,18 @@ a{
                         color: #fff;
                     }
                     .jfeedtitle{
-                        font-size: 30px;
-                        line-height: 1.2;
-                        cursor: pointer;
-                        font-weight: 700;
-                        letter-spacing: 1.5px;
-                        color: #17b978;
+                        a{
+                            font-size: 30px;
+                            line-height: 1.2;
+                            cursor: pointer;
+                            font-weight: 700;
+                            letter-spacing: 1.5px;
+                            color: #ffffff;
+                            transition: all .3s;
+                        }
+                        a:hover{
+                            color: #17b978;
+                        }
                     }
                 }
             }
