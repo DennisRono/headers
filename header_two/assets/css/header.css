@@ -41,6 +41,12 @@ a {
   padding-top: 20px;
 }
 
+.header .hcontainer .hflex .hlogo {
+  width: 40px;
+  height: 40px;
+  margin-top: -12px;
+}
+
 .header .hcontainer .hflex .hlogo img {
   width: 100%;
   height: 100%;
@@ -53,7 +59,9 @@ a {
 }
 
 .header .hcontainer .hflex .hnavigation .hnav li a {
-  padding: 10px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   cursor: pointer;
 }
 /*# sourceMappingURL=header.css.map */
