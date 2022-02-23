@@ -211,8 +211,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 3px;
   height: 50%;
+  gap: 3px;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree {
