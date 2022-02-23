@@ -9,8 +9,51 @@ html, body {
   overflow-x: hidden;
 }
 
+li {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header {
-  height: 60px;
+  height: 54px;
   background-color: #284fff;
+}
+
+.header .hcontainer {
+  margin: 0 5%;
+}
+
+.header .hcontainer .hflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+}
+
+.header .hcontainer .hflex .hlogo img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .hcontainer .hflex .hnavigation .hnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .hcontainer .hflex .hnavigation .hnav li a {
+  padding: 10px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=header.css.map */

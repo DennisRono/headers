@@ -7,7 +7,40 @@ html, body{
     width: 100%;
     overflow-x: hidden;
 }
+li{
+    list-style: none !important;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
 .header{
-    height: 60px;
+    height: 54px;
     background-color: rgb(40, 79, 255);
+    .hcontainer{
+        margin: 0 5%;
+        .hflex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 20px;
+            .hlogo{
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .hnavigation{
+                .hnav{
+                    display: flex;
+                    li{
+                        a{
+                            padding: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
