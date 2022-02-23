@@ -182,17 +182,30 @@ a {
   white-space: normal;
 }
 
-.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt a a {
-  font-size: 15px;
+.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt .category-link {
+  padding: 2px 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #fff;
+  border-color: #fff;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  line-height: 1.2;
 }
 
-.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt a h3 {
+.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt .category-link:hover {
+  background-color: #17b978;
+  border-color: #17b978;
+  color: #fff;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt .jfeedtitle {
   font-size: 30px;
   line-height: 1.2;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 1.5px;
-  color: green;
+  color: #17b978;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex {
