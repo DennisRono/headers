@@ -149,6 +149,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 3px;
   margin: 20px 0px;
   height: 500px;
   overflow: hidden;
@@ -161,6 +162,9 @@ a {
 .jumbotron .jcontainer .jfeeds .jfeedone img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex {
@@ -171,28 +175,44 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 3px;
   width: 50%;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo {
+  height: 50%;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 3px;
+  height: 50%;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }
 
 /* media query breakpoints *
