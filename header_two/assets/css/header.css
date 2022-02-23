@@ -166,6 +166,11 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  aspect-ratio: auto 1440 / 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.5)));
   -webkit-mask-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0.5));
   mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.5)));
