@@ -175,6 +175,17 @@ a {
   padding: 20px;
 }
 
+.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt a {
+  color: #fff !important;
+  font-family: 'Roboto', sans-serif;
+  text-overflow: ellipsis;
+  white-space: normal;
+  font-size: 30px;
+  line-height: 1.2;
+  cursor: pointer;
+  font-weight: 500;
+}
+
 .jumbotron .jcontainer .jfeeds .jfeedleftflex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,6 +218,11 @@ a {
   padding: 20px;
 }
 
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt a {
+  color: #fff !important;
+  font-family: 'Roboto', sans-serif;
+}
+
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,6 +233,7 @@ a {
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree {
   position: relative;
+  width: 50%;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree img {
@@ -234,8 +251,14 @@ a {
   padding: 20px;
 }
 
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt a {
+  color: #fff !important;
+  font-family: 'Roboto', sans-serif;
+}
+
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour {
   position: relative;
+  width: 50%;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour img {
@@ -251,6 +274,11 @@ a {
   bottom: 0;
   left: 0;
   padding: 20px;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt a {
+  color: #fff !important;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* media query breakpoints *
