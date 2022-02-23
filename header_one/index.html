@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header_one</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-5.0.8/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-5.0.8/css/fontawesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="top-popup">
+            <div class="container">
+                <span class="top-left">
+                    <span class="hide">Welcome</span>
+                    <a href="" class="left-topbar-item hide"><span>Sign in</span></a>
+                    <a href="" class="left-topbar-item hide"><span>Sign up</span></a>
+                    <a href="" class="left-topbar-item"><span>About</span></a>
+                    <a href="" class="left-topbar-item"><span>Contact Us</span></a>
+                </span>
+                <span class="top-right">
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href="" id="hide"><i class="fab fa-instagram"></i></a>
+                    <a href="" id="hide"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="" id="hide"><i class="fab fa-vimeo-v"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </span>
+            </div>
+        </div>
+        <div class="header-center">
+            <div class="container center-flex">
+                <div class="logo-header nav-cont-l">
+                    <div class="logo-image">
+                        <img src="./img/favicon.ico" alt="">
+                    </div>
+                    <div class="logo-text">
+                        <h3>nitrodizz</h3>
+                    </div>
+                </div>
+                <div class="member-join">
+                    <a href="./register.html" class="register-button">Sign up</a>
+                    <a href="./login.html" class="login-button">Sign in</a>                    
+                </div>
+                <span class="resopen">
+                    <i class="nav-cont navopen fas fa-bars" onclick="navbar()"></i>
+                    <i id="navclose" class="nav-cont fas fa-times" onclick="navclose()" style="display: none;"></i>
+                </span>
+            </div>
+        </div>
+        <div class="navbar" id="sticky-header">
+            <div class="container">
+                <div class="navbar-flex">
+                    <nav class="nav">
+                        <ul class="unlist">
+                            <li class="link_1"><a class="active link_header1" href="./index.html">Home</a></li>
+                            <li class=""><a class="link_header2" href="./about.html">About</a></li>
+                            <li class=""><a class="link_header3" href="./services.html">Services</a></li>
+                            <li class=""><a class="link_header4" href="./blog.html">Blog</a></li>
+                            <li class=""><a class="link_header5" href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="h_search">
+                        <form class="navform" id="navform">
+                            <input class="searchinput" type="text" placeholder="Search..">
+                            <i class="fas fa-search" type="submit" name="submit" onclick="closeform();"></i>
+                        </form>
+                        <div class="show_search_form" id="openform">
+                            <i class="fas fa-search" onclick="showsearchform();"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div style="height: 150vh; background-color: aqua;"></div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        //search form
+        function showsearchform(){
+            var form = document.querySelector('#navform');
+            var openform = document.querySelector('#openform');
+            form.style.display = "block";
+            openform.style.display = "none";
+        }
+        function closeform(){
+            var form = document.querySelector('#navform');
+            var openform = document.querySelector('#openform');
+            form.style.display = "none";
+            openform.style.display = "block";
+        }
+    </script>
+</body>
+</html>
