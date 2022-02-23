@@ -134,6 +134,9 @@ a{
                     height: 100%;
                     object-fit: cover;
                     overflow: hidden;
+                    -webkit-mask-image: linear-gradient(180deg,rgba(0, 0, 0, 0.5),transparent);
+                    mask-image: linear-gradient(180deg,rgba(0, 0, 0, 0.5),transparent);
+                    transition: .5s;
                 }
                 .feedtxt{
                     position: absolute;
