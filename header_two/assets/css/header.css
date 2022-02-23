@@ -98,6 +98,15 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.breadCrumb .breadCrumbContainer .breadCrumbFlex .bTrending p .btrendingnowStatic {
+  color: #222;
+}
+
+.breadCrumb .breadCrumbContainer .breadCrumbFlex .bTrending p .btrendingnow {
+  color: #222;
 }
 
 /* media query breakpoints *
