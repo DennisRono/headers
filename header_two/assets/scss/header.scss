@@ -67,7 +67,26 @@ a{
         }
     }
 }
+.breadCrumb{
+    height: 50px;
+    .breadCrumbContainer{
+        margin: 0 5%;
+        .breadCrumbFlex{
+            display: flex;
+            justify-content: space-between;
+            .bTrending{
+                p{
+                    .btrendingnowStatic{
 
+                    }
+                    .btrendingnow{
+
+                    }
+                }
+            }
+        }
+    }
+}
 /* media query breakpoints *
 * 320px — 480px: Mobile devices
 * 481px — 768px: iPads, Tablets

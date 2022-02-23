@@ -83,6 +83,23 @@ a {
   color: #fff !important;
 }
 
+.breadCrumb {
+  height: 50px;
+}
+
+.breadCrumb .breadCrumbContainer {
+  margin: 0 5%;
+}
+
+.breadCrumb .breadCrumbContainer .breadCrumbFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 /* media query breakpoints *
 * 320px — 480px: Mobile devices
 * 481px — 768px: iPads, Tablets
