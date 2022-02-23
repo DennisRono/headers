@@ -172,6 +172,7 @@ a {
   position: absolute;
   bottom: 0;
   left: 0;
+  padding: 20px;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex {
@@ -188,6 +189,7 @@ a {
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo {
   height: 50%;
+  position: relative;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo img {
@@ -198,12 +200,23 @@ a {
   overflow: hidden;
 }
 
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 3px;
   height: 50%;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree {
+  position: relative;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree img {
@@ -214,12 +227,30 @@ a {
   overflow: hidden;
 }
 
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour {
+  position: relative;
+}
+
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
 }
 
 /* media query breakpoints *
