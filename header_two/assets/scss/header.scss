@@ -134,15 +134,16 @@ a{
                     height: 100%;
                     object-fit: cover;
                     overflow: hidden;
-                    filter: brightness(90%);
+                    filter: brightness(80%);
                     aspect-ratio: auto 1440 / 500;
                     transition: 0.5s;
-                    -webkit-mask-image: linear-gradient(180deg,rgb(0, 0, 0),rgba(0,0,0,.5));
-                    mask-image: linear-gradient(180deg,rgb(0, 0, 0),rgba(0,0,0,.5));
+                    // -webkit-mask-image: linear-gradient(180deg,rgb(0, 0, 0),transparent);
+                    // mask-image: linear-gradient(180deg,rgb(0, 0, 0),transparent);
                     transition: .5s;
                 }
                 img:hover{
                     opacity: 1;
+                    filter: brightness(100%);
                 }
                 .feedtxt{
                     position: absolute;
@@ -163,6 +164,7 @@ a{
                         font-family: Roboto-Regular;
                         font-size: 14px;
                         line-height: 1.2;
+                        border: 1px solid #fff;
                     }
                     .category-link:hover{
                         background-color: #17b978;
@@ -170,11 +172,12 @@ a{
                         color: #fff;
                     }
                     .jfeedtitle{
+                        margin-top: 20px;
                         a{
                             font-size: 30px;
                             line-height: 1.2;
                             cursor: pointer;
-                            font-weight: 700;
+                            font-weight: 500;
                             letter-spacing: 1.5px;
                             color: #ffffff;
                             transition: all .3s;

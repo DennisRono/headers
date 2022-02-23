@@ -166,21 +166,19 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
-  -webkit-filter: brightness(90%);
-          filter: brightness(90%);
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
   aspect-ratio: auto 1440 / 500;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.5)));
-  -webkit-mask-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0.5));
-  mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.5)));
-  mask-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0.5));
   -webkit-transition: .5s;
   transition: .5s;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedone img:hover {
   opacity: 1;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedone .feedtxt {
@@ -206,6 +204,7 @@ a {
   font-family: Roboto-Regular;
   font-size: 14px;
   line-height: 1.2;
+  border: 1px solid #fff;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedone .feedtxt .category-link:hover {
@@ -214,11 +213,15 @@ a {
   color: #fff;
 }
 
+.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt .jfeedtitle {
+  margin-top: 20px;
+}
+
 .jumbotron .jcontainer .jfeeds .jfeedone .feedtxt .jfeedtitle a {
   font-size: 30px;
   line-height: 1.2;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1.5px;
   color: #ffffff;
   -webkit-transition: all .3s;
