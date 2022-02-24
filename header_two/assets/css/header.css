@@ -159,6 +159,10 @@ a {
 }
 
 /* ======Jumbotron stylings====== */
+.landing .landcontainer {
+  margin: 0 5%;
+}
+
 .landing .landcontainer .landflex {
   display: -webkit-box;
   display: -ms-flexbox;
