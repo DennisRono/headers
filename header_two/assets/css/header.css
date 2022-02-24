@@ -159,6 +159,11 @@ a {
   margin: 0 5%;
 }
 
+.jumbotron .jcontainer .featuredBlogs {
+  padding: 10px;
+  border-left: 4px solid #000;
+}
+
 .jumbotron .jcontainer .jfeeds {
   display: -webkit-box;
   display: -ms-flexbox;

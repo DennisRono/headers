@@ -124,6 +124,10 @@ a{
 .jumbotron{
     .jcontainer{
         margin: 0 5%;
+        .featuredBlogs{
+            padding: 10px;
+            border-left: 4px solid #000;
+        }
         .jfeeds{
             display: flex;
             gap: 3px;
