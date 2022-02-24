@@ -544,6 +544,18 @@ a {
           transform: translate(-50%, 0);
 }
 
+.footer .fcontainer .fcopyright p {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #4e4e4e !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer .fcontainer .fcopyright p a {
+  cursor: pointer;
+}
+
 /* media query breakpoints *
 * 320px — 480px: Mobile devices
 * 481px — 768px: iPads, Tablets
