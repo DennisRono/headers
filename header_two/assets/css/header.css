@@ -202,6 +202,19 @@ a {
   color: #494949;
 }
 
+.landing .landcontainer .landflex .landtexts a {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 300;
+  font-size: 1.1rem !important;
+  font-family: 'Roboto', sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: -webkit-gradient(linear, left top, right bottom, from(#14a9ff), to(#0088f0)) !important;
+  background: linear-gradient(to bottom right, #14a9ff, #0088f0) !important;
+  color: #fff !important;
+}
+
 .landing .landcontainer .landflex .landimages {
   width: 50%;
 }

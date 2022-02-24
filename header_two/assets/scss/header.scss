@@ -164,6 +164,16 @@ a{
                     margin-bottom: 50px;
                     color: rgb(73, 73, 73);
                 }
+                a{
+                    padding: 10px 20px;
+                    border-radius: 30px;
+                    font-weight: 300;
+                    font-size: 1.1rem !important;
+                    font-family: 'Roboto', sans-serif;
+                    transition: 0.3s;
+                    background: linear-gradient(to bottom right,#14a9ff,#0088f0)!important;
+                    color: #fff !important;
+                }
             }
             .landimages{
                 width: 50%;
