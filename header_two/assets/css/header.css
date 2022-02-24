@@ -530,6 +530,20 @@ a {
   color: #17b978;
 }
 
+/* ======Footer stylings====== */
+.footer .fcontainer {
+  margin: 0 5%;
+  position: relative;
+}
+
+.footer .fcontainer .fcopyright {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
 /* media query breakpoints *
 * 320px — 480px: Mobile devices
 * 481px — 768px: iPads, Tablets
