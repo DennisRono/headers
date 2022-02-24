@@ -161,7 +161,11 @@ a {
 
 .jumbotron .jcontainer .featuredBlogs {
   padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
   border-left: 4px solid #000;
+  letter-spacing: 2px;
 }
 
 .jumbotron .jcontainer .jfeeds {
