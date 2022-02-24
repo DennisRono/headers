@@ -149,6 +149,8 @@ a{
                     margin-bottom: 0.8rem;
                     position: relative;
                     span{
+                        -webkit-text-fill-color: transparent;
+                        -webkit-background-clip: text;
                         background-image: linear-gradient(100deg,rgb(73, 73, 73),#753aff);
                         display: inline-block;
                     }
