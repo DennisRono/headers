@@ -9,6 +9,7 @@ html, body {
   border-style: border-box;
   width: 100%;
   overflow-x: hidden;
+  background-color: #dee0ff;
 }
 
 li {
