@@ -183,6 +183,16 @@ a {
   position: relative;
 }
 
+.landing .landcontainer .landflex .landtexts p {
+  font-family: canada-type-gibson,sans-serif;
+  font-size: 1.3rem !important;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.4rem !important;
+  margin-bottom: 50px;
+  color: #494949;
+}
+
 .landing .landcontainer .landflex .landimages {
   width: 50%;
 }
