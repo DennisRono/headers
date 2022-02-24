@@ -414,9 +414,11 @@ a{
 
 /* ======Footer stylings====== */
 .footer{
+    height: 50vh;
     .fcontainer{
         margin: 0 5%;
         position: relative;
+        height: 100%;
         .fdet{
 
         }
@@ -425,6 +427,7 @@ a{
             bottom: 0%;
             left: 50%;
             transform: translate(-50%, 0);
+            margin-bottom: 20px;
             p{
                 cursor: pointer;
                 font-size: 0.9rem;

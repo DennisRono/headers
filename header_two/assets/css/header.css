@@ -531,9 +531,14 @@ a {
 }
 
 /* ======Footer stylings====== */
+.footer {
+  height: 50vh;
+}
+
 .footer .fcontainer {
   margin: 0 5%;
   position: relative;
+  height: 100%;
 }
 
 .footer .fcontainer .fcopyright {
@@ -542,6 +547,7 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+  margin-bottom: 20px;
 }
 
 .footer .fcontainer .fcopyright p {
