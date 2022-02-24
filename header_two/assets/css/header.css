@@ -21,7 +21,7 @@ a {
 
 .header {
   height: 54px;
-  background-color: #284fff;
+  background-color: white;
 }
 
 .header .hcontainer {
@@ -39,18 +39,51 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 .header .hcontainer .hflex .hlogo {
-  width: 40px;
-  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: -8px;
+  margin-left: 20px;
 }
 
 .header .hcontainer .hflex .hlogo img {
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
+  margin-right: 30px;
+}
+
+.header .hcontainer .hflex .hlogo .bSearch .bSearchForm {
+  margin-top: 3px;
+}
+
+.header .hcontainer .hflex .hlogo .bSearch .bSearchForm .bsgroup {
+  border: 1px solid #222;
+  border-radius: 30px;
+  padding: 7px 20px;
+}
+
+.header .hcontainer .hflex .hlogo .bSearch .bSearchForm .bsgroup input {
+  outline: 0;
+  border: none;
+  background: 0 0;
+}
+
+.header .hcontainer .hflex .hlogo .bSearch .bSearchForm .bsgroup button {
+  outline: 0;
+  border: none;
+  background: 0 0;
+  cursor: pointer;
+}
+
+.header .hcontainer .hflex .hnavigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
 }
 
 .header .hcontainer .hflex .hnavigation .hnav {
@@ -61,16 +94,16 @@ a {
 
 .header .hcontainer .hflex .hnavigation .hnav li a {
   padding: 20px;
-  padding-top: 10px;
+  padding-top: 16px;
   padding-bottom: 10px;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 400;
-  color: #fff !important;
+  color: #4e4e4e !important;
   font-family: 'Roboto', sans-serif;
 }
 
-.header .hcontainer .hflex .hcalltoaction li a {
+.header .hcontainer .hflex .hnavigation .hcalltoaction li a {
   padding: 10px 20px;
   border-radius: 30px;
   font-weight: 300;
@@ -122,25 +155,6 @@ a {
   width: 600px !important;
 }
 
-.breadCrumb .breadCrumbContainer .breadCrumbFlex .bSearch .bSearchForm .bsgroup {
-  border: 1px solid #222;
-  border-radius: 30px;
-  padding: 10px 20px;
-}
-
-.breadCrumb .breadCrumbContainer .breadCrumbFlex .bSearch .bSearchForm .bsgroup input {
-  outline: 0;
-  border: none;
-  background: 0 0;
-}
-
-.breadCrumb .breadCrumbContainer .breadCrumbFlex .bSearch .bSearchForm .bsgroup button {
-  outline: 0;
-  border: none;
-  background: 0 0;
-  cursor: pointer;
-}
-
 .jumbotron .jcontainer {
   margin: 0 5%;
 }
@@ -158,6 +172,7 @@ a {
 .jumbotron .jcontainer .jfeeds .jfeedone {
   width: 50%;
   position: relative;
+  background-color: #020202;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedone img {
@@ -166,17 +181,21 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
   aspect-ratio: auto 1440 / 500;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  -webkit-mask-image: linear-gradient(180deg, black, transparent);
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+          mask-image: linear-gradient(180deg, black, transparent);
   -webkit-transition: .5s;
   transition: .5s;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedone img:hover {
-  opacity: 1;
+  opacity: 0.9;
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
 }
@@ -247,6 +266,7 @@ a {
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo {
   height: 50%;
   position: relative;
+  background-color: #020202;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo img {
@@ -255,6 +275,23 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  aspect-ratio: auto 1440 / 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  -webkit-mask-image: linear-gradient(180deg, black, transparent);
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+          mask-image: linear-gradient(180deg, black, transparent);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo img:hover {
+  opacity: 0.9;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt {
@@ -265,8 +302,47 @@ a {
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt a {
-  color: #fff !important;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt .category-link {
+  padding: 2px 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #fff;
+  border-color: #fff;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  line-height: 1.2;
+  border: 1px solid #fff;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt .category-link:hover {
+  background-color: #17b978;
+  border-color: #17b978;
+  color: #fff;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt .jfeedtitle {
+  margin-top: 10px;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt .jfeedtitle a {
+  font-size: 22px;
+  line-height: 1.2;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt .jfeedtitle a:hover {
+  color: #17b978;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex {
@@ -280,6 +356,7 @@ a {
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree {
   position: relative;
   width: 50%;
+  background-color: #020202;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree img {
@@ -288,6 +365,23 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  aspect-ratio: auto 1440 / 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  -webkit-mask-image: linear-gradient(180deg, black, transparent);
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+          mask-image: linear-gradient(180deg, black, transparent);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree img:hover {
+  opacity: 0.9;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt {
@@ -298,13 +392,53 @@ a {
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt a {
-  color: #fff !important;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt .category-link {
+  padding: 2px 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #fff;
+  border-color: #fff;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  line-height: 1.2;
+  border: 1px solid #fff;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt .category-link:hover {
+  background-color: #17b978;
+  border-color: #17b978;
+  color: #fff;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt .jfeedtitle {
+  margin-top: 10px;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt .jfeedtitle a {
+  font-size: 16px;
+  line-height: 1.2;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt .jfeedtitle a:hover {
+  color: #17b978;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour {
   position: relative;
   width: 50%;
+  background-color: #020202;
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour img {
@@ -313,6 +447,23 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  aspect-ratio: auto 1440 / 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  -webkit-mask-image: linear-gradient(180deg, black, transparent);
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+          mask-image: linear-gradient(180deg, black, transparent);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour img:hover {
+  opacity: 0.9;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt {
@@ -323,8 +474,47 @@ a {
 }
 
 .jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt a {
-  color: #fff !important;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt .category-link {
+  padding: 2px 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #fff;
+  border-color: #fff;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  line-height: 1.2;
+  border: 1px solid #fff;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt .category-link:hover {
+  background-color: #17b978;
+  border-color: #17b978;
+  color: #fff;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt .jfeedtitle {
+  margin-top: 10px;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt .jfeedtitle a {
+  font-size: 16px;
+  line-height: 1.2;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt .jfeedtitle a:hover {
+  color: #17b978;
 }
 
 /* media query breakpoints *

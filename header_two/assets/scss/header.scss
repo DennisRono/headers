@@ -16,51 +16,75 @@ a{
 }
 .header{
     height: 54px;
-    background-color: rgb(40, 79, 255);
+    background-color: rgb(255, 255, 255);
     .hcontainer{
         margin: 0 5%;
         .hflex{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding-top: 15px;
+            padding-top: 25px;
             .hlogo{
-                width: 40px;
-                height: 40px;
+                display: flex;
                 margin-top: -8px;
+                margin-left: 20px;
                 img{
-                    width: 100%;
-                    height: 100%;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 30px;
+                }
+                .bSearch{
+                    .bSearchForm{
+                        margin-top: 3px;
+                        .bsgroup{
+                            border: 1px solid #222;
+                            border-radius: 30px;
+                            padding: 7px 20px;
+                            input{
+                                outline: 0;
+                                border: none;
+                                background: 0 0;
+                            }
+                            button{
+                                outline: 0;
+                                border: none;
+                                background: 0 0;
+                                cursor: pointer;
+                            }
+                        }
+                    }
                 }
             }
             .hnavigation{
+                display: flex;
+                gap: 20px;
                 .hnav{
                     display: flex;
                     li{
                         a{
                             padding: 20px;
-                            padding-top: 10px;
+                            padding-top: 16px;
                             padding-bottom: 10px;
                             cursor: pointer;
-                            font-size: 1.2rem;
+                            font-size: 0.9rem;
                             font-weight: 400;
-                            color: #fff !important;
+                            color: rgb(78, 78, 78) !important;
                             font-family: 'Roboto', sans-serif;
                         }
                     }
                 }
-            }
-            .hcalltoaction{
-                li{
-                    a{
-                        padding: 10px 20px;
-                        border-radius: 30px;
-                        font-weight: 300;
-                        font-size: 1.1rem !important;
-                        font-family: 'Roboto', sans-serif;
-                        transition: 0.3s;
-                        background: linear-gradient(to bottom right,#14a9ff,#0088f0)!important;
-                        color: #fff !important;
+                .hcalltoaction{
+                    li{
+                        a{
+                            padding: 10px 20px;
+                            border-radius: 30px;
+                            font-weight: 300;
+                            font-size: 1.1rem !important;
+                            font-family: 'Roboto', sans-serif;
+                            transition: 0.3s;
+                            background: linear-gradient(to bottom right,#14a9ff,#0088f0)!important;
+                            color: #fff !important;
+                        }
                     }
                 }
             }
@@ -94,26 +118,6 @@ a{
                     }
                 }
             }
-            .bSearch{
-                .bSearchForm{
-                    .bsgroup{
-                        border: 1px solid #222;
-                        border-radius: 30px;
-                        padding: 10px 20px;
-                        input{
-                            outline: 0;
-                            border: none;
-                            background: 0 0;
-                        }
-                        button{
-                            outline: 0;
-                            border: none;
-                            background: 0 0;
-                            cursor: pointer;
-                        }
-                    }
-                }
-            }
         }
     }
 }
@@ -129,20 +133,20 @@ a{
             .jfeedone{
                 width: 50%;
                 position: relative;
+                background-color: rgb(2, 2, 2);
                 img{
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     overflow: hidden;
-                    filter: brightness(80%);
+                    filter: brightness(90%);
                     aspect-ratio: auto 1440 / 500;
                     transition: 0.5s;
-                    // -webkit-mask-image: linear-gradient(180deg,rgb(0, 0, 0),transparent);
-                    // mask-image: linear-gradient(180deg,rgb(0, 0, 0),transparent);
+                    mask-image: linear-gradient(180deg,rgb(0, 0, 0),transparent);
                     transition: .5s;
                 }
                 img:hover{
-                    opacity: 1;
+                    opacity: 0.9;
                     filter: brightness(100%);
                 }
                 .feedtxt{
@@ -196,11 +200,21 @@ a{
                 .jfeedtwo{
                     height: 50%;
                     position: relative;
+                    background-color: rgb(2, 2, 2);
                     img{
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
                         overflow: hidden;
+                        filter: brightness(90%);
+                        aspect-ratio: auto 1440 / 500;
+                        transition: 0.5s;
+                        mask-image: linear-gradient(180deg,rgb(0, 0, 0),transparent);
+                        transition: .5s;
+                    }
+                    img:hover{
+                        opacity: 0.9;
+                        filter: brightness(100%);
                     }
                     .feedtxt{
                         position: absolute;
@@ -208,8 +222,40 @@ a{
                         left: 0;
                         padding: 20px;
                         a{
-                            color: #fff !important;
+                            color: #fff;
                             font-family: 'Roboto', sans-serif;
+                            text-overflow: ellipsis;
+                            white-space: normal;
+                        }
+                        .category-link{
+                            padding: 2px 5px;
+                            transition: all .3s;
+                            color: #fff;
+                            border-color: #fff;
+                            font-family: Roboto-Regular;
+                            font-size: 14px;
+                            line-height: 1.2;
+                            border: 1px solid #fff;
+                        }
+                        .category-link:hover{
+                            background-color: #17b978;
+                            border-color: #17b978;
+                            color: #fff;
+                        }
+                        .jfeedtitle{
+                            margin-top: 10px;
+                            a{
+                                font-size: 22px;
+                                line-height: 1.2;
+                                cursor: pointer;
+                                font-weight: 500;
+                                letter-spacing: 1.5px;
+                                color: #ffffff;
+                                transition: all .3s;
+                            }
+                            a:hover{
+                                color: #17b978;
+                            }
                         }
                     }
                 }
@@ -220,11 +266,21 @@ a{
                     .jfeedthree{
                         position: relative;
                         width: 50%;
+                        background-color: rgb(2, 2, 2);
                         img{
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
                             overflow: hidden;
+                            filter: brightness(90%);
+                            aspect-ratio: auto 1440 / 500;
+                            transition: 0.5s;
+                            mask-image: linear-gradient(180deg,rgb(0, 0, 0),transparent);
+                            transition: .5s;
+                        }
+                        img:hover{
+                            opacity: 0.9;
+                            filter: brightness(100%);
                         }
                         .feedtxt{
                             position: absolute;
@@ -232,19 +288,61 @@ a{
                             left: 0;
                             padding: 20px;
                             a{
-                                color: #fff !important;
+                                color: #fff;
                                 font-family: 'Roboto', sans-serif;
+                                text-overflow: ellipsis;
+                                white-space: normal;
+                            }
+                            .category-link{
+                                padding: 2px 5px;
+                                transition: all .3s;
+                                color: #fff;
+                                border-color: #fff;
+                                font-family: Roboto-Regular;
+                                font-size: 14px;
+                                line-height: 1.2;
+                                border: 1px solid #fff;
+                            }
+                            .category-link:hover{
+                                background-color: #17b978;
+                                border-color: #17b978;
+                                color: #fff;
+                            }
+                            .jfeedtitle{
+                                margin-top: 10px;
+                                a{
+                                    font-size: 16px;
+                                    line-height: 1.2;
+                                    cursor: pointer;
+                                    font-weight: 500;
+                                    letter-spacing: 1.5px;
+                                    color: #ffffff;
+                                    transition: all .3s;
+                                }
+                                a:hover{
+                                    color: #17b978;
+                                }
                             }
                         }
                     }
                     .jfeedfour{
                         position: relative;
                         width: 50%;
+                        background-color: rgb(2, 2, 2);
                         img{
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
                             overflow: hidden;
+                            filter: brightness(90%);
+                            aspect-ratio: auto 1440 / 500;
+                            transition: 0.5s;
+                            mask-image: linear-gradient(180deg,rgb(0, 0, 0),transparent);
+                            transition: .5s;
+                        }
+                        img:hover{
+                            opacity: 0.9;
+                            filter: brightness(100%);
                         }
                         .feedtxt{
                             position: absolute;
@@ -252,8 +350,40 @@ a{
                             left: 0;
                             padding: 20px;
                             a{
-                                color: #fff !important;
+                                color: #fff;
                                 font-family: 'Roboto', sans-serif;
+                                text-overflow: ellipsis;
+                                white-space: normal;
+                            }
+                            .category-link{
+                                padding: 2px 5px;
+                                transition: all .3s;
+                                color: #fff;
+                                border-color: #fff;
+                                font-family: Roboto-Regular;
+                                font-size: 14px;
+                                line-height: 1.2;
+                                border: 1px solid #fff;
+                            }
+                            .category-link:hover{
+                                background-color: #17b978;
+                                border-color: #17b978;
+                                color: #fff;
+                            }
+                            .jfeedtitle{
+                                margin-top: 10px;
+                                a{
+                                    font-size: 16px;
+                                    line-height: 1.2;
+                                    cursor: pointer;
+                                    font-weight: 500;
+                                    letter-spacing: 1.5px;
+                                    color: #ffffff;
+                                    transition: all .3s;
+                                }
+                                a:hover{
+                                    color: #17b978;
+                                }
                             }
                         }
                     }
