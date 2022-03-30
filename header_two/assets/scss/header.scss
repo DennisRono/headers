@@ -1,4 +1,6 @@
 /* ======Global stylings====== */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap');
+
 :root{
     --color: rgb(46, 46, 46);
 }
@@ -469,8 +471,71 @@ a{
         }
     }
 }
+/* ======social proof stylings====== */
+.secsocproof{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    .socproof{
+        .socproofcontainer{
+            margin: 0 5%;
+            .socproofflex{
+                .socproofwrapper{
+                    .socprooftitle{
+                        text-align: center;
+                        color: rgb(36, 36, 36);
+                        font-family: 'Merriweather', serif;
+                        font-size: 2.4rem;
+                        line-height: 3.4rem;
+                        margin-bottom: 0.8rem;
+                        position: relative;
+                        span{
+                            -webkit-text-fill-color: transparent;
+                            -webkit-background-clip: text;
+                            background-image: linear-gradient(100deg,rgb(73, 73, 73),#753aff);
+                            display: inline-block;
+                        }
+                    }
+                    .testimonial-slider{
+                        width: 100%;
+                        margin-top: 110px;
+                        margin-bottom: 72px;
+                        position: relative;
+                        &::before{
+                            content: "";
+                            width: 100px;
+                            height: 71px;
+                            background: url(../svg/quote-gray.svg);
+                            position: absolute;
+                            fill: #753aff !important;
+                            top: -40px;
+                            left: 0px;
+                            right: 0px;
+                            margin: 0px auto;
+                            z-index: 1;
+                        }
+                        .test-soc-slide{
+                            margin: 0 15%;
+                            .socproof-texts{
+                                text-align: center;
+                                position: relative;
+                                z-index: 2;
+                                font-size: 26px;
+                                line-height: 36px;
+                                letter-spacing: 0.04em;
+                                font-family: 'Merriweather', serif;
+                                font-style: italic;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 /* ======newsletter subscribe stylings====== */
 .secNewsletter{
+    margin-top: 150px;
+    margin-bottom: 150px;
     .newsletter{
         .newslettercontainer{
             margin: 0 5%;
