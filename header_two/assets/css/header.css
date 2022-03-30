@@ -662,6 +662,12 @@ a {
   font-style: italic;
 }
 
+.secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .socproof-testimonials-authors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* ======newsletter subscribe stylings====== */
 .secNewsletter {
   margin-top: 150px;
