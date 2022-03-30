@@ -668,6 +668,12 @@ a {
   display: flex;
 }
 
+.secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .socproof-testimonials-authors .test-author-one img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
 /* ======newsletter subscribe stylings====== */
 .secNewsletter {
   margin-top: 150px;
