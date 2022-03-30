@@ -666,12 +666,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
 }
 
 .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .socproof-testimonials-authors .test-author-one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 200px;
 }
 
 .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .socproof-testimonials-authors .test-author-one img {
