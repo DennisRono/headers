@@ -666,9 +666,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -676,13 +676,13 @@ a {
   width: -moz-min-content;
   width: min-content;
   margin: 80px auto;
+  width: 900px;
 }
 
 .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .socproof-testimonials-authors .test-author-one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 300px;
 }
 
 .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .socproof-testimonials-authors .test-author-one img {
