@@ -528,6 +528,8 @@ a{
                         }
                         .socproof-testimonials-authors{
                             display: flex;
+                            justify-content: center;
+                            align-items: center;
                             width: min-content;
                             margin: 80px auto;
                             .test-author-one{
