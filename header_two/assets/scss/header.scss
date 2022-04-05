@@ -140,6 +140,7 @@ a{
 
 /* ======Jumbotron stylings====== */
 .landing{
+    overflow: hidden;
     .landcontainer{
         margin: 0 5%;
         .landflex{
@@ -185,6 +186,106 @@ a{
             }
             .landimages{
                 width: 50%;
+                img{
+                    width: 250%;
+                    margin-left: -130%;
+                    margin-top: -40px;
+                    transform: rotate(-2deg);
+                }
+            }
+        }
+    }
+}
+
+.passCard{
+    transform:skew(0deg, -5deg);
+    height: 70vh;
+    background: #0088f0;
+    position: relative;
+    margin-top: -20px;
+    margin-bottom: 170px;
+    .passCardWrapper{
+        transform:skew(0deg, 5deg);
+        margin-bottom: -100px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        background: linear-gradient(to top,#14a9ff,#0088f0)!important;
+        .passCardContainer{
+            margin: 0 5%;
+            .passCardFlex{
+                display: flex;
+                padding-top: 80px;
+                .passCardTiler{
+                    width: 50%;
+                    .passTiltCard{
+                        width: 450px;
+                        height: 200px;
+                        padding: 20px;
+                        background-color: #37373792;
+                        overflow: hidden;
+                        border-radius: 10px;
+                        display: flex;
+                        position: relative;
+                        box-shadow: #6f00ff40 0px 54px 55px, #7d03ff1f 0px -12px 30px, #8800ff1f 0px 4px 6px, #7f07ff2b 0px 12px 13px, #7b00ff17 0px -3px 5px;
+                        .passTiltCardImage{
+                            width: 40%;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                            img{
+                                width: 80%;
+                                height: auto;
+                                object-fit: cover;
+                            }
+                        }
+                        .passTiltCardTexts{
+                            width: 65%; 
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: space-between;
+                            margin-left: -5%;
+                            color: #f6f6f6;
+                            div{
+                                margin-bottom: 40px;
+                                h1,p{
+                                    color: #f6f6f6;
+                                    span{
+                                        font-weight: 500;
+                                    }
+                                    .apikey{
+                                        background-color: #35353583;
+                                        padding: 5px;
+                                        border-radius: 5px;
+                                    }
+                                }
+                                p{
+                                    margin-bottom: 10px;
+                                }
+                            }                        
+                        }
+                    }
+                }
+                .passOutroTexts{
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    div{
+                        h2{
+                            line-height: 1.25;
+                            font-size: 2rem;
+                            color: #f6f6f6;
+                            font-weight: 700;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            color: #e0e1ea;
+                            line-height: 1.25;
+                            letter-spacing: 1.2;
+                        }
+                    }
+                }
             }
         }
     }
@@ -194,7 +295,7 @@ a{
 
 .jumbotron{
     .jcontainer{
-        margin: 0 5%;
+        margin: 50px 5%;
         .featuredBlogs{
             padding: 10px;
             font-family: 'Roboto', sans-serif;
@@ -532,9 +633,12 @@ a{
                             align-items: center;
                             width: min-content;
                             margin: 80px auto;
+                            margin-top: 40px;
                             width: 900px;
                             .test-author-one{
                                 display: flex;
+                                cursor: pointer;
+                                padding: 10px;
                                 img{
                                     width: 50px;
                                     height: 50px;
@@ -542,12 +646,26 @@ a{
                                     margin-right: 20px;
                                 }
                             }
+                            .activeAuthor{
+                                border-top: 2px solid cyan;
+                                transition: .3s;
+                            }
                         }
                     }
                 }
             }
         }
     }
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 /* ======newsletter subscribe stylings====== */
 .secNewsletter{

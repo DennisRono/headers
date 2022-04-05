@@ -167,6 +167,10 @@ a {
 }
 
 /* ======Jumbotron stylings====== */
+.landing {
+  overflow: hidden;
+}
+
 .landing .landcontainer {
   margin: 0 5%;
 }
@@ -227,9 +231,148 @@ a {
   width: 50%;
 }
 
+.landing .landcontainer .landflex .landimages img {
+  width: 250%;
+  margin-left: -130%;
+  margin-top: -40px;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+
+.passCard {
+  -webkit-transform: skew(0deg, -5deg);
+          transform: skew(0deg, -5deg);
+  height: 70vh;
+  background: #0088f0;
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: 170px;
+}
+
+.passCard .passCardWrapper {
+  -webkit-transform: skew(0deg, 5deg);
+          transform: skew(0deg, 5deg);
+  margin-bottom: -100px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#14a9ff), to(#0088f0)) !important;
+  background: linear-gradient(to top, #14a9ff, #0088f0) !important;
+}
+
+.passCard .passCardWrapper .passCardContainer {
+  margin: 0 5%;
+}
+
+.passCard .passCardWrapper .passCardContainer .passCardFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 80px;
+}
+
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler {
+  width: 50%;
+}
+
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard {
+  width: 450px;
+  height: 200px;
+  padding: 20px;
+  background-color: #37373792;
+  overflow: hidden;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-shadow: #6f00ff40 0px 54px 55px, #7d03ff1f 0px -12px 30px, #8800ff1f 0px 4px 6px, #7f07ff2b 0px 12px 13px, #7b00ff17 0px -3px 5px;
+          box-shadow: #6f00ff40 0px 54px 55px, #7d03ff1f 0px -12px 30px, #8800ff1f 0px 4px 6px, #7f07ff2b 0px 12px 13px, #7b00ff17 0px -3px 5px;
+}
+
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardImage {
+  width: 40%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardImage img {
+  width: 80%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: -5%;
+  color: #f6f6f6;
+}
+
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div {
+  margin-bottom: 40px;
+}
+
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div h1, .passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div p {
+  color: #f6f6f6;
+}
+
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div h1 span, .passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div p span {
+  font-weight: 500;
+}
+
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div h1 .apikey, .passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div p .apikey {
+  background-color: #35353583;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts div p {
+  margin-bottom: 10px;
+}
+
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passOutroTexts {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passOutroTexts div h2 {
+  line-height: 1.25;
+  font-size: 2rem;
+  color: #f6f6f6;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.passCard .passCardWrapper .passCardContainer .passCardFlex .passOutroTexts div p {
+  color: #e0e1ea;
+  line-height: 1.25;
+  letter-spacing: 1.2;
+}
+
 /* ======Jumbotron stylings====== */
 .jumbotron .jcontainer {
-  margin: 0 5%;
+  margin: 50px 5%;
 }
 
 .jumbotron .jcontainer .featuredBlogs {
@@ -676,6 +819,7 @@ a {
   width: -moz-min-content;
   width: min-content;
   margin: 80px auto;
+  margin-top: 40px;
   width: 900px;
 }
 
@@ -683,6 +827,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .socproof-testimonials-authors .test-author-one img {
@@ -690,6 +836,38 @@ a {
   height: 50px;
   border-radius: 50%;
   margin-right: 20px;
+}
+
+.secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .socproof-testimonials-authors .activeAuthor {
+  border-top: 2px solid cyan;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* ======newsletter subscribe stylings====== */
